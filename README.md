@@ -4,7 +4,7 @@ Ensemble of proxy scrapers gathered from other repos that I have modified to poo
 
 ## Current List of Proxies Being Used
 * [proxy-scraper-checker](https://github.com/monosans/proxy-scraper-checker) - Referenced as LongWaitScraper (takes several minutes to finish scraping)
-* [free-proxy-list.net](http://free-proxy-list.net) - Referenced as ShortWaitScraper (takes 2 seconds to scrape)
+* [proxy-scraper](https://github.com/iw4p/proxy-scraper) - Referenced as ShortWaitScraper (takes 2 seconds to scrape)
   *  Note that this scraper also had a proxy checker functionality that I referenced as ProxyChecker
 
 ## Installation

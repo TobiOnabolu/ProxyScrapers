@@ -12,7 +12,7 @@ Ensemble of proxy scrapers gathered from other repos that I have modified to poo
 * From the command line cd into root project folder and use this command to install dependencies. ```bash pip3 install -r requirements.txt ```
 
 ## Usage
-* Each scraper/checker has a seperate command to run them. I have not made 1 command to run all of them at once because it easier to seperately run the Shortwait scraper when you quickly want a list of proxies, and easier to seperately run the Longwait scraper when you are willing to wait a few minutes for more proxies. 
+* Each scraper/checker has a seperate command to run them. I have not made 1 command to run all of them at once because it easier to run them seperately depending on the use case, i.e. not having to wait a long time for the LongWaitScraper
 * Each Scraper outputs their list of proxies to the ```bash allProxies.txt``` file. This file contents is saved to a set before overwriting so the proxy list continues to grow and has no duplicates.
 
 ## LongWaitScraper Usage

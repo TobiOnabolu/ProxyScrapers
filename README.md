@@ -9,25 +9,25 @@ Ensemble of proxy scrapers gathered from other repos that I have modified to poo
 
 ## Installation
 * Fork and clone the repo onto your computer.
-* From the command line cd into root project folder and use this command to install dependencies. ```bash pip3 install -r requirements.txt ```
+* From the command line cd into root project folder and use this command to install dependencies. ```pip3 install -r requirements.txt ```
 
 ## Usage
 * Each scraper/checker has a seperate command to run them. I have not made 1 command to run all of them at once because it easier to run them seperately depending on the use case, i.e. not having to wait a long time for the LongWaitScraper
-* Each Scraper outputs their list of proxies to the ```bash allProxies.txt``` file. This file contents is saved to a set before overwriting so the proxy list continues to grow and has no duplicates.
+* Each Scraper outputs their list of proxies to the ```allProxies.txt``` file. This file contents is saved to a set before overwriting so the proxy list continues to grow and has no duplicates.
 
 ## LongWaitScraper Usage
 * From the command line cd into the LongWaitScraper folder. 
-* On Windows run ```bash ./start.cmd ```
-* On Mac run ```bash ./start.sh ```
+* On Windows run ```./start.cmd ```
+* On Mac run ```./start.sh ```
 * These commands will install anything needed if it wasn't installed already, and runs the scraper to start collecting proxies.
 
 ###  Modifications to LongWaitScraper 
-* ```bash gatherProxies.py ``` has been added to grab all proxies that the scraper produced and put them in the parent directory into a file named ```bash allProxies.txt ```
-* The start command has an extra final step of calling ```bash gatherProxies.py ``` after scraper has produced all proxies
+* ```gatherProxies.py ``` has been added to grab all proxies that the scraper produced and put them in the parent directory into a file named ```allProxies.txt ```
+* The start command has an extra final step of calling ```gatherProxies.py ``` after scraper has produced all proxies
 
 ## ShortWaitScraper Usage
 * From the command line cd into the ShortWaitScraper folder. 
-* Run ```bash python3 proxyScraper.py -v ```
+* Run ```python3 proxyScraper.py -v ```
 * This will run the scraper to start collecting proxies
 
 ###  Modifications to ShortWaitScraper 
@@ -37,8 +37,8 @@ Ensemble of proxy scrapers gathered from other repos that I have modified to poo
 
 ## ProxyChecker
 * From the command line cd into the ProxyChecker folder. 
-* Run ```bash python3 proxyChecker.py -v -s buyee.jp -t 3```
-* This will run the checker to check all proxies in ```bash allProxies.txt ``` against a website and output the working ones to ```bash workingProxies.txt  ```
+* Run ```python3 proxyChecker.py -v -s buyee.jp -t 3```
+* This will run the checker to check all proxies in ```allProxies.txt ``` against a website and output the working ones to ```workingProxies.txt  ```
 
 ###  Modifications to ProxyChecker 
 * Seperated input and output files so that it reads a list of proxies from an input file and output the working proxies to a seperate output file

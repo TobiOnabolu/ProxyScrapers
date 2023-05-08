@@ -17,8 +17,8 @@ Ensemble of proxy scrapers gathered from other repos that I have modified to poo
 
 ## LongWaitScraper Usage
 * From the command line cd into the LongWaitScraper folder. 
-* On Windows run ```bash start.cmd ```
-* On Mac run ```bash start.sh ```
+* On Windows run ```bash ./start.cmd ```
+* On Mac run ```bash ./start.sh ```
 * These commands will install anything needed if it wasn't installed already, and runs the scraper to start collecting proxies.
 
 ###  Modifications to LongWaitScraper 
@@ -37,7 +37,7 @@ Ensemble of proxy scrapers gathered from other repos that I have modified to poo
 
 ## ProxyChecker
 * From the command line cd into the ProxyChecker folder. 
-* Run ```bash python3 proxyChecker.py -v ```
+* Run ```bash python3 proxyChecker.py -v -s buyee.jp -t 3```
 * This will run the checker to check all proxies in ```bash allProxies.txt ``` against a website and output the working ones to ```bash workingProxies.txt  ```
 
 ###  Modifications to ProxyChecker 
